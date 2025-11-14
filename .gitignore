@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcworkspace/xcuserdata
+xcuserdata/
+*.xcuserstate
+*.ipa
+*.xcarchive
+/.build/
+Pods/
+Podfile.lock
+
+# Android / Gradle
+/.gradle
+/local.properties
+**/build/
+*.iml
+
+# Keystore & Secrets
+*.jks
+*.keystore
+.env
+*.json
