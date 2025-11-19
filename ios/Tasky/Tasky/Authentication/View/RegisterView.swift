@@ -149,14 +149,7 @@ struct RegisterView: View {
                                 viewModel.showAnimation = true
                             }
                         }
-                    
-                    
-                    Text("Şifremi unuttum?")
-                        .frame(maxWidth: .infinity , alignment: .trailing)
-                        .padding(.trailing)
-                        .foregroundStyle(Color("blue"))
-                        .font(.footnote)
-                        .padding(.top , 12)
+
                 }
                 .padding(.top)
                 
@@ -169,7 +162,7 @@ struct RegisterView: View {
                     
                 }
                 .padding()
-                .background(Color("blue"))
+                .background(Color("logoBlue"))
                 .clipShape(RoundedRectangle(cornerRadius: 24))
                 .overlay(
                     RoundedRectangle(cornerRadius: 24)
@@ -183,7 +176,7 @@ struct RegisterView: View {
                         dismiss()
                     } label: {
                         Text("Giriş Yap")
-                            .foregroundStyle(Color("blue"))
+                            .foregroundStyle(Color("logoBlue"))
                             .underline()
                     }
                     .offset(y: viewModel.showAnimation ? 0 : 60)

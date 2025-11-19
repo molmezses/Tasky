@@ -96,6 +96,13 @@ struct LoginView: View {
                         }
                     }
                     
+                    Text("Şifremi unuttum?")
+                        .frame(maxWidth: .infinity , alignment: .trailing)
+                        .padding(.trailing)
+                        .foregroundStyle(Color("logoBlue"))
+                        .font(.footnote)
+                        .padding(.vertical , 6)
+                    
                     Button {
                         
                     } label: {
@@ -105,7 +112,7 @@ struct LoginView: View {
                         
                     }
                     .padding()
-                    .background(Color("blue"))
+                    .background(Color("logoBlue"))
                     .clipShape(RoundedRectangle(cornerRadius: 24))
                     .overlay(
                         RoundedRectangle(cornerRadius: 24)
@@ -120,7 +127,7 @@ struct LoginView: View {
                                 .navigationBarBackButtonHidden()
                         } label: {
                             Text("Kayıt ol")
-                                .foregroundStyle(Color("blue"))
+                                .foregroundStyle(Color("logoBlue"))
                                 .underline()
                         }
                         
